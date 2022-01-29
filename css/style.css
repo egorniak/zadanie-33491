@@ -1,6 +1,4 @@
 /* Base styles */
-
-
 * {
     box-sizing: border-box;
 }
@@ -38,7 +36,7 @@ section {
     border: 1px solid #007bff;
     padding: 14px 20px;
     transition: all .3s;
-    display: inline block;
+    display: inline-block;
     margin: auto;
     background-color: transparent;
     cursor: pointer;
@@ -99,6 +97,7 @@ section {
 #drop-nav {
     display: none;
 }
+
 label[for="drop-nav"] {
     display: none;
 }
@@ -278,27 +277,28 @@ label[for="drop-nav"] {
     .contact input[type="email"] {
         flex-basis: 100%;
     }
-}
 
-label[for="drop-nav"] {
-    display: block;
-    padding: 14px 20px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    text-align: right;
-    cursor: pointer;
-}
-.main-menu ul {
-    display: none;
-}
+    label[for="drop-nav"] {
+        display: block;
+        padding: 14px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: right;
+        cursor: pointer;
+    }
 
-#drop-nav:checked + ul {
-    display: block;
-}
+    .main-menu ul {
+        display: none;
+    }
 
-.main-menu ul .menu-item {
-    display: block;
-    text-align: right;
-    margin: 0;
-}
+    #drop-nav:checked + ul {
+        display: block;
+    }
+
+    .main-menu ul .menu-item {
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
+}   
